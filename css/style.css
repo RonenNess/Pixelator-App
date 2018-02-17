@@ -1,0 +1,178 @@
+/* main container style */
+.container
+{
+    padding: 20px 20px 20px 20px;
+}
+
+/* increase spacing to all paragraph types */
+p, li, span
+{
+    word-spacing: 0.12em;
+}
+
+/* indent for lists */
+.indent-1 {
+    margin-left: 20px;
+}
+
+/* question text */
+.adviser p,
+.adviser span,
+.adviser li
+{
+    font-size: 120%;
+}
+
+/* body background */
+.background {
+    margin: 0;
+    background-attachment: fixed;
+    background-image:    url(../img/background.jpg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.project-card
+{
+	padding-bottom: 20px;
+}
+
+/* remove links underline */
+a {
+    text-decoration: none !important;
+}
+a:hover {
+    text-decoration: none !important;
+}
+a:active {
+    text-decoration: none !important;
+}
+
+/* card div */
+.content-card {
+    background-color: #fff;
+    font-size: 1em;
+    overflow: hidden;
+    padding: 25px 35px 25px 35px;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+
+/* a cover image to fit a div as best as possible */
+.cover-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: auto;
+    height: 370px;
+    max-width: 100%;
+}
+
+
+/* profile pic */
+.profile-pic {
+    background: url("") 50% 50% no-repeat;
+    width: 225px;
+    height: 225px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+    .profile-pic {
+        width: 155px;
+        height: 155px;
+    }
+}
+
+/* example preview picture */
+.example-preview-pic {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom:10px;
+    transition: 0.3s;
+}
+.example-preview-pic:hover
+{
+    opacity: 0.7;
+}
+
+
+
+/* PREVIEW IMAGES MODAL */
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

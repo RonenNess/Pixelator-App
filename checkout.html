@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metadata and title -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Convert any picture into pixel-art sprites!">
+    <meta name="author" content="Ronen Ness">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Pixelator - Checkout</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styling -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- paypal checkout button -->
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+</head>
+
+<body class="background">
+
+    <!-- main content -->
+    <div class="container">
+        <div class="row content-card">
+
+            <!-- banner and top text -->
+            <p style="text-align:center;">
+                <a href="index.html">
+		            <img src="img/banner.png" width="100%;" height="auto">
+                </a>
+            </p>
+
+            <!-- main -->
+            <div style="text-align:center;">
+                <h1>Checkout License</h1>
+                <hr />
+            </div>
+
+            <!-- text -->
+            <p id="mainText">
+                You chose to purchase '__license_type__' license for '__license_owner__' (cost $__license_price__). <br />
+                For more info about the license, <a href="buy_license___license_type__.html" target="_blank">visit license page</a>. <br /><br />
+
+                To complete purchase, please click below and accept payment via PayPal or credit card:
+            </p>
+
+            <!-- paypal button -->
+            <br />
+            <div style="text-align:center;" id="buy-btn-container">
+                <div id="paypal-button"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- extra bottom space -->
+    <br /><br /><br />
+
+	<!-- Jquery and Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- store.js -->
+    <script src="js/store.min.js"></script>
+
+    <!-- checkout script -->
+    <script src="js/checkout.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metadata and title -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Convert any picture into pixel-art sprites!">
+    <meta name="author" content="Ronen Ness">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Pixelator - Download</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styling -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="background">
+
+    <!-- main content -->
+    <div class="container">
+        <div class="row content-card">
+
+            <!-- banner and top text -->
+            <p style="text-align:center;">
+                <a href="index.html">
+		            <img src="img/banner.png" width="100%;" height="auto">
+                </a>
+            </p>
+
+            <!-- links -->
+            <a href="download.html"><button type="button" class="btn btn-lg btn-success">Free Download</button></a>
+            <a href="index.html"><button type="button" class="btn btn-lg btn-info">About</button></a>
+            <a href="buy.html"><button type="button" class="btn btn-lg btn-info">License & Pricing</button></a>
+            <a href="examples.html"><button type="button" class="btn btn-lg btn-info">Examples Gallery</button></a>
+            <a href="support.html"><button type="button" class="btn btn-lg btn-info">Support / Requests</button></a>
+
+            <!-- main -->
+            <div style="text-align:center;">
+                <h1>Download Pixelator</h1>
+                <p>
+                    In this page you can download Pixelator's installer.<br />
+                    When Pixelator first installs it has no license and is not suitable for commercial projects. In addition, it will add a watermark.<br /><br />
+                    To get / purchase a license please visit the <a href="buy.html">License & Pricing</a> page. <br />
+                    There's a free license for personal projects or you can purchase a license for a small studio or a bigger company (its a one-time payment).
+                </p>
+                <hr />
+                <div style="cursor:pointer;">
+                    <a href="static/pixelator-1.0.0-win32.msi" download>
+                        <img src="img/install.png" style="max-width:100%; margin-bottom:-10px;">
+                        <h2>Download Installer</h2>
+                    </a>
+                </div>
+                <p>Note: by downloading and installing Pixelator you accept that you've read and agree to the software <a onclick="$('#eulaModal').show();" style="cursor:pointer;">License Agreement</a>.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- extra bottom space -->
+    <br /><br /><br />
+
+    <!-- eula agreement -->
+    <div id="eulaModal" class="modal">
+        <a onclick="$('#eulaModal').hide();">
+            <span class="close">&times;</span>
+            <iframe class="modal-content" style="height:80%" src="eula.html"></iframe>
+        </a>
+        <p style="text-align:center;">
+            <button type="button" onclick="$('#eulaModal').hide();" class="btn btn-lg btn-info">Close EULA</button>
+        </p>
+    </div>
+
+	<!-- Jquery and Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

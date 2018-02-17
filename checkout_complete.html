@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metadata and title -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Convert any picture into pixel-art sprites!">
+    <meta name="author" content="Ronen Ness">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Pixelator - Your New License!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styling -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- paypal checkout button -->
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+</head>
+
+<body class="background">
+
+    <!-- main content -->
+    <div class="container">
+        <div class="row content-card">
+
+            <!-- banner and top text -->
+            <p style="text-align:center;">
+                <a href="index.html">
+		            <img src="img/banner.png" width="100%;" height="auto">
+                </a>
+            </p>
+
+            <!-- main -->
+            <div style="text-align:center;">
+                <h1>Checkout Complete!</h1>
+                <hr />
+            </div>
+
+            <!-- text and license details -->
+            <h4 id="mainText">
+                Thank you for buying Pixelator. Here's your new license details: <br /><br />
+            </h4>
+            <table class="table">
+                  <tbody id="license-details">
+                    <tr>
+                      <td>Type</td>
+                      <td id="license-type"></td>
+                    </tr>
+                    <tr>
+                      <td>Owner</td>
+                      <td id="license-owner"></td>
+                    </tr>
+                    <tr>
+                      <td>Key</td>
+                      <td id="license-key"></td>
+                    </tr>
+                    <tr>
+                      <td>Timestamp</td>
+                      <td id="license-time"></td>
+                    </tr>
+                    <tr>
+                      <td>Price</td>
+                      <td id="license-price"></td>
+                    </tr>
+                  </tbody>
+            </table>
+            <hr />
+
+            <h2>How to apply License</h2>
+            <p>To use your new license please click on the 'Download License' button and place the file under your Pixelator installation folder.<br />
+                The license file must be called 'LICENSE' (case sensitive) and reside in the same folder as the 'Pixelator.exe' file.
+            </p>
+            <br />
+            <button type="button" class="btn btn-lg btn-success" onclick="downloadLicense();">Download License</button>
+            <br /><br />
+            <p>
+                If download doesn't work for whatever reason, you can create the file manually and put the following text inside it (using any text editor):
+            </p>
+            <textarea class="form-control" id="license-text" readonly style="resize: none;" rows="2" >
+            </textarea>
+
+            <p><br />Note: if you're replacing an existing license its recommended to keep a backup of the old license file before overriding it.</p>
+
+            <h2>Support</h2>
+            <p>If you have any difficulties applying the new license, please contact me at <a href="mailto:ronenness@gmail.com">ronenness@gmail.com</a>.</p>
+
+        </div>
+    </div>
+
+    <!-- extra bottom space -->
+    <br /><br /><br />
+
+	<!-- Jquery and Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- store.js and checkout complete -->
+    <script src="js/store.min.js"></script>
+    <script src="js/checkout_complete.min.js"></script>
+
+</body>
+
+</html>
