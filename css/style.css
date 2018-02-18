@@ -176,3 +176,9 @@ a:active {
         width: 100%;
     }
 }
+
+/* make navbar text bigger */
+.navbar-nav li
+{
+    font-size: 17px !important;
+}

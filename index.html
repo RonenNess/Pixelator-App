@@ -39,8 +39,26 @@
 
 <body class="background">
 
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Pixelator</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="buy.html">License & Pricing</a></li>
+            <li><a href="examples.html">Examples</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- main content -->
     <div class="container">
+
+        <!-- content -->
         <div class="row content-card">
 
             <!-- banner and top text -->
@@ -50,18 +68,15 @@
                 </a>
             </p>
 
-            <!-- links -->
-            <a href="download.html"><button type="button" class="btn btn-lg btn-success">Free Download</button></a>
-            <a href="index.html"><button type="button" class="btn btn-lg btn-info">About</button></a>
-            <a href="buy.html"><button type="button" class="btn btn-lg btn-info">License & Pricing</button></a>
-            <a href="examples.html"><button type="button" class="btn btn-lg btn-info">Examples Gallery</button></a>
-            <a href="support.html"><button type="button" class="btn btn-lg btn-info">Support / Requests</button></a>
-
             <!-- tagline -->
             <div style="text-align:center;">
                 <h1>Turn any image into fancy pixel-art.</h1>
                 <hr />
             </div>
+
+            <!-- intro -->
+            <h2>Introducing Pixelator</h2>
+            <p>Pixelator is a smart software to convert images into pixel art sprites and cover arts. With Pixelator you can use any source picture to easily generate Pixelated graphics for games or posters.</p>
 
             <!-- what is it good for -->
             <h2>What is it good for?</h2>
@@ -144,6 +159,7 @@
 	<!-- Jquery and Bootstrap js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/shared.js"></script>
 
     <!-- example images click event -->
     <script>
