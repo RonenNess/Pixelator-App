@@ -41,7 +41,7 @@
 <body class="background">
 
     <!-- navbar -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse remove-if-info-only">
       <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
@@ -79,8 +79,8 @@
                 <img src="img/lic_3.png"><br />
                 <h1>Company License</h1>
                 <hr />
-                <h3>Price: $70 one time payment</h3>
-                <hr />
+                <h3 class="remove-if-info-only">Price: $70 one time payment</h3>
+                <hr class="remove-if-info-only" />
             </div>
 
             <p>
@@ -100,7 +100,7 @@
             </ul>
             <br />
 
-            <a id="getLicenseBtn"><button type="button" class="btn btn-lg btn-info">Agree & Proceed to payment</button></a>
+            <a class="remove-if-info-only" id="getLicenseBtn"><button type="button" class="btn btn-lg btn-info">Agree & Proceed to payment</button></a>
 
             <br /><br />
             <hr />
