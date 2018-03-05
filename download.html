@@ -86,16 +86,45 @@
                 <p>To download older versions, check out the <a href="download_old.html">Older Versions Download page</a>.</p>
                 <hr />
 
+                <!-- choose version -->
+                <p style="text-align:center; font-size: 130%">
+                    <a onclick="showDownload('Windows');" style="cursor:pointer;"> Windows </a> &bull; <a onclick="showDownload('Linux');" style="cursor:pointer;"> Linux </a> &bull; <a onclick="showDownload('MacOS');" style="cursor:pointer;"> Mac OS </a>
+                </p>
+
                 <!-- download windows -->
-                <div id="download-Windows" style="cursor:pointer;">
+                <div class="download-div" id="download-Windows" style="cursor:pointer;" onclick="$('#download-start').show(1000);">
                     <a href="https://drive.google.com/uc?authuser=0&id=1ppDMNnNOrw5lY9AgOho9XWo79SDjJvtt&export=download" download>
-                        <img src="img/install.png" style="max-width:100%; margin-bottom:-10px;">
-                        <h2>Download Pixelator [1.0.2] For Windows</h2>
-                        <p>Versions for Mac OS and Linux are coming soon!</p>
+                        <img src="img/dl-windows.png" style="max-width:100%; margin-bottom:-10px;">
+                        <h2>Pixelator [1.0.2] For Windows</h2>
                     </a>
                 </div>
 
+                <!-- download linux -->
+                <div class="download-div" id="download-Linux" style="cursor:pointer; display:none;" onclick="$('#download-start').show(1000);">
+                    <a href="https://drive.google.com/uc?authuser=0&id=1aTIKio7TO5FuOnYd7SeM_mlO0dV0ho1E&export=download" download>
+                        <img src="img/dl-linux.png" style="max-width:100%; margin-bottom:-10px;">
+                        <h2>Pixelator [1.0.2] For Linux x64</h2>
+                    </a>
+                </div>
+
+                <!-- download mac -->
+                <div class="download-div" id="download-MacOS" style="cursor:pointer; display:none;" onclick="$('#download-start').show(1000);">
+                    <h1>Mac OS version coming soon!</h1>
+                    <!--
+                    <a href="https://drive.google.com/uc?authuser=0&id=1ppDMNnNOrw5lY9AgOho9XWo79SDjJvtt&export=download" download>
+                        <img src="img/dl-mac.png" style="max-width:100%; margin-bottom:-10px;">
+                        <h2>Pixelator [1.0.2] For Mac x64</h2>
+                    </a>
+                    -->
+                </div>
+
+                <!-- agree to terms -->
                 <p>By downloading, you agree to the <a onclick="$('#eulaModal').show();" style="cursor:pointer;">Terms and Conditions</a>.</p>
+
+                <!-- started download alert! -->
+                <div id="download-start" class="alert alert-success" style="display:none;">
+                  <strong>Getting ready..</strong><br />(Download will begin in a few seconds!)
+                </div>
             </div>
 
             <hr />
@@ -127,6 +156,7 @@
 
     <!-- show downloader based on OS -->
     <script>
+        // get current OS from useragent
         function getOS() {
           var userAgent = window.navigator.userAgent,
               platform = window.navigator.platform,
@@ -145,8 +175,16 @@
 
           return os;
         }
+
+        // get os (default to windows)
         var os = getOS() || "Windows";
-        // $('#download-' + os).show();
+
+        // show the right download link
+        showDownload(os);
+        function showDownload(os) {
+            $('.download-div').hide();
+            $('#download-' + os).show();
+        }
     </script>
 
 </body>
