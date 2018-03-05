@@ -79,25 +79,28 @@
                 <h1>Download Pixelator</h1>
                 <hr />
                 <p>
-                    In this page you can download Pixelator's installer.<br />
-                    When Pixelator first installs it has no license and is not suitable for commercial projects. In addition, it will add a watermark.<br /><br />
+                    In this page you can download Pixelator's latest versions. To install, simply extract the archive anywhere and run Pixelator main executable.<br /><br />
+                    When Pixelator first installs it has no license and is not suitable for commercial projects. In addition, it will add a watermark.<br />
                     To get / purchase a license please visit the <a href="buy.html">License & Pricing</a> page. <br />
-                    There's a free license for personal projects or you can purchase a license for a small studio or a bigger company (its a one-time payment). <br /><br />
-                    Requirements: .Net 4.5.0 or above installed, Microsoft Visual C++ 2015 Redistributable Update 3 RC.
                 </p>
+                <p>To download older versions, check out the <a href="download_old.html">Older Versions Download page</a>.</p>
                 <hr />
-                <div style="cursor:pointer;">
-                    <a href="https://drive.google.com/uc?authuser=0&id=1QNX4EkLe9mpFxAzWUgzZFhWEZhptwpu4&export=download" download>
+
+                <!-- download windows -->
+                <div id="download-Windows" style="cursor:pointer;">
+                    <a href="https://drive.google.com/uc?authuser=0&id=1ppDMNnNOrw5lY9AgOho9XWo79SDjJvtt&export=download" download>
                         <img src="img/install.png" style="max-width:100%; margin-bottom:-10px;">
-                        <h2>Download Windows Installer [1.0.1]</h2>
+                        <h2>Download Pixelator [1.0.2] For Windows</h2>
+                        <p>Versions for Mac OS and Linux are coming soon!</p>
                     </a>
                 </div>
-                <p>Note: by downloading and installing Pixelator you accept that you've read and agree to the software <a onclick="$('#eulaModal').show();" style="cursor:pointer;">License Agreement</a>.</p>
+
+                <p>By downloading, you agree to the <a onclick="$('#eulaModal').show();" style="cursor:pointer;">Terms and Conditions</a>.</p>
             </div>
 
             <hr />
             <div style="text-align:center;">
-                <h3>Updating?</h3>
+                <h3>Updating</h3>
                 <p>If you already have Pixelator installed and want to update to a newer version, please read the <a href="update.html">Updates Instructions</a> first.</p>
             </div>
         </div>
@@ -121,6 +124,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/shared.js"></script>
+
+    <!-- show downloader based on OS -->
+    <script>
+        function getOS() {
+          var userAgent = window.navigator.userAgent,
+              platform = window.navigator.platform,
+              macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+              windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+              iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+              os = null;
+
+          if (macosPlatforms.indexOf(platform) !== -1) {
+            os = 'MacOS';
+          } else if (windowsPlatforms.indexOf(platform) !== -1) {
+            os = 'Windows';
+          } else if (!os && /Linux/.test(platform)) {
+            os = 'Linux';
+          }
+
+          return os;
+        }
+        var os = getOS() || "Windows";
+        // $('#download-' + os).show();
+    </script>
 
 </body>
 

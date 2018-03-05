@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43062336-9"></script>
     <script>
@@ -20,7 +21,7 @@
     <meta name="author" content="Ronen Ness">
     <meta name="keywords" content="Pixel Art,GameDev,Game,Game Development,Tools,Drawing,Sprites,Game Graphics,Graphics,Create Sprites,Game Art,Pixels,Old School">
     <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Pixelator - Support</title>
+    <title>Pixelator - Download</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -75,21 +76,46 @@
 
             <!-- main -->
             <div style="text-align:center;">
-                <h1>Contact / Support</h1>
+                <h1>Download Older Versions</h1>
                 <hr />
-                <p>Before contacting support, please read the <a href="faq.html">FAQ page</a>. It might be an easy-to-fix problem that don't require support.</p>
-                <h4>
-                    For support or suggestions please email me directly: <a href="mailto:ronenness@gmail.com">ronenness@gmail.com</a>.
-                </h4>
-                <p>Please include "Pixelator Support" in the subject.</p>
+                <p>
+                    In this page you can download Pixelator's old installers.<br />
+                    When Pixelator first installs it has no license and is not suitable for commercial projects. In addition, it will add a watermark.<br /><br />
+                    To get / purchase a license please visit the <a href="buy.html">License & Pricing</a> page. <br />
+                    There's a free license for personal projects or you can purchase a license for a small studio or a bigger company (its a one-time payment). <br /><br />
+                    Requirements: .Net 4.5.0 or above installed, Microsoft Visual C++ 2015 Redistributable Update 3 RC.
+                </p>
+                <hr />
+                <div style="cursor:pointer;">
+                    <a href="https://drive.google.com/uc?authuser=0&id=1QNX4EkLe9mpFxAzWUgzZFhWEZhptwpu4&export=download" download>
+                        <img src="img/install.png" style="max-width:100%; margin-bottom:-10px;">
+                        <h2>Download Windows Installer [1.0.1]</h2>
+                    </a>
+                </div>
+                <p>Note: by downloading and installing Pixelator you accept that you've read and agree to the software <a onclick="$('#eulaModal').show();" style="cursor:pointer;">License Agreement</a>.</p>
             </div>
 
-
+            <hr />
+            <div style="text-align:center;">
+                <h3>Updating?</h3>
+                <p>If you already have Pixelator installed and want to update to a newer version, please read the <a href="update.html">Updates Instructions</a> first.</p>
+            </div>
         </div>
     </div>
 
     <!-- extra bottom space -->
     <br /><br /><br />
+
+    <!-- eula agreement -->
+    <div id="eulaModal" class="modal">
+        <a onclick="$('#eulaModal').hide();">
+            <span class="close">&times;</span>
+            <iframe class="modal-content" style="height:80%" src="eula.html"></iframe>
+        </a>
+        <p style="text-align:center;">
+            <button type="button" onclick="$('#eulaModal').hide();" class="btn btn-lg btn-info">Close EULA</button>
+        </p>
+    </div>
 
 	<!-- Jquery and Bootstrap js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
