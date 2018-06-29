@@ -128,12 +128,6 @@
                 </div>
 
                 <h2>Troubleshooting</h2>
-				<div class="faq">
-                    <p class="q">Q: Windows Defender told me Pixelator is a trojan! Am I infected now??</p>
-                    <p class="a">A: No. A recent update in Windows Defender started to falsely detect Pixelator's exe as a trojan (a false-positive id), along with many other Python apps built with pyinstall and PIL.<br />
-					However, Pixelator's files were not compromise in any way, and there were no trojans nor viruses infecting them. All the tools used to build Pixelator are 100% legal and well tested.<br />
-					If you have this detection from previous Pixelator version, please download the version for windows again. Rebuilding the exe slightly different removed this false alert.
-                </div>
                 <div class="faq">
                     <p class="q">Q: When I try to change something I get an unexpected error without details.</p>
                     <p class="a">A: Please validate the following:
@@ -150,6 +144,14 @@
                     <ul class="a">
                         <li>Run Pixelator as administrator.</li>
                         <li>Move Pixelator outside of 'Program Files' and make sure its not read-only.</li>
+                    </ul>
+                </div>
+				<div class="faq">
+                    <p class="q">Q: Trying to export image result in 'Permission Denied' error. How to fix this?</p>
+                    <p class="a">A: This usually happens when you try to export to a folder which you have no writing permissions for (note: sometimes its a folder that you have permission as admin, but you run Pixelator as guest so Pixelator can't access it even though you can). To fix this please try one of the following:</p>
+                    <ul class="a">
+                        <li>Run Pixelator as administrator.</li>
+                        <li>Export file to a different location, one that does not require any permissions.</li>
                     </ul>
                 </div>
                 <div class="faq">
