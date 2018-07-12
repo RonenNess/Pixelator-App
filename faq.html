@@ -159,7 +159,7 @@
                     <p class="a">A: This should not happen and Pixelator should work on its own, without any dependencies. However, I did witness it happen few times on some machines. Unfortunately its unsolved, but you can try installing Python3.6+ and it will most likely fix it.</p>
                 </div>
                 <div class="faq">
-                    <p class="q">Q: I'm getting an error saying ''_pixelator_cmd.exe' is not recognized as an internal or external command' (or something along those lines), what to do?</p>
+                    <p class="q">Q: I'm getting an error saying '_pixelator_cmd.exe' is not recognized as an internal or external command' (or something along those lines), what to do?</p>
                     <p class="a">A: This could mean that you didn't install Pixelator properly. Please make sure if you have the missing file in your Pixelator folder, and if you do try to add that to your computer PATH environment variable.</p>
                 </div>
                 <div class="faq">
@@ -167,10 +167,15 @@
                     <p class="a">A: This most likely means that someone tampered with the license file or maybe you didn't copy it correctly when buying it. Please contact support.</p>
                 </div>
                 <div class="faq">
-                    <p class="q">Q: Why am I seeing a watermark on the resul pictures?</p>
+                    <p class="q">Q: Why am I seeing a watermark on the result pictures?</p>
                     <p class="a">A: It means that you don't have a license. Purchase or get a free license to remove watermarks.</p>
                 </div>
-
+				<div class="faq">
+                    <p class="q">Q: I have a license but when I execute Pixelator shell command I'm seeing watermark. Why?</p>
+                    <p class="a">A: If you execute _pixelator_cmd.exe from outside its original folder, it will fail to find the license. Please execute it from within Pixelator's folder. <br />
+					If problem persist, please run '_pixelator_cmd.exe --license' to get more info.</p>
+                </div>
+				
                 <h2>Usage</h2>
                 <div class="faq">
                     <p class="q">Q: Gif animation is not showing in output. why?</p>
@@ -178,7 +183,7 @@
                 </div>
                 <div class="faq">
                     <p class="q">Q: I'm not seeing any stroke / outlines even though I have set stroke type and opacity. Why?</p>
-                    <p class="a">A: By default, stokes are drawn between opaque and transparent pixels, so if your image have a background it will not work. However, you can also apply stroke on color diffs using the 'Stroke on changing colors' property.</p>
+                    <p class="a">A: By default, strokes are drawn between opaque and transparent pixels, so if your image have a background it will not work. However, you can also apply stroke on color diffs using the 'Stroke on changing colors' property.</p>
                 </div>
                 <div class="faq">
                     <p class="q">Q: How can I save the settings used to produce a specific image?</p>
